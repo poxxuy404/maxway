@@ -754,3 +754,65 @@ body {
     /* istalgan rang */
     border-bottom: 2px solid #830e86;
 }
+
+/* Responsive for tablets */
+@media (max-width: 900px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .one_content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .one_imgs img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .product_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .nav_content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .one_text h1 {
+        font-size: 40px;
+        line-height: 45px;
+        width: 100%;
+        height: auto;
+    }
+
+    .one_imgs img {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .product_card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_image {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer_container,
+    .footer_bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
