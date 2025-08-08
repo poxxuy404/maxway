@@ -788,6 +788,11 @@ body {
         gap: 10px;
     }
 
+    .sec6_container {
+        display: grid;
+        grid-template-columns: 1f;
+    }
+
     .one_text h1 {
         font-size: 40px;
         line-height: 45px;
