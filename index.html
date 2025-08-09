@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaxWay Hero</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="nav_content">
+<body class="font-inter bg-gray-50">
+    <header class="header bg-gradient-to-r from-white via-white to-[#800a7a]">
+        <div class="container mx-auto px-5">
+            <div class="flex justify-between items-center pt-6 gap-5">
                 <div class="logo">
-                    <img src="./imgs/Group Copy 18.svg" alt="MaxWay Logo">
+                    <img src="./imgs/Group Copy 18.svg" alt="MaxWay Logo"
+                        class="w-[50px] h-auto transition-transform duration-300 ease-in-out">
                 </div>
-                <ul class="nav_list">
-                    <li>Menyu</li>
-                    <li>Bolalar uchun</li>
-                    <li>Filiallar</li>
+                <ul class="flex gap-7 list-none text-[#222124] text-sm font-normal items-center">
+                    <li
+                        class="cursor-pointer relative transition-colors duration-300 ease-in-out hover:text-[#800a7a] after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-[#800a7a] after:transition-all after:duration-300 hover:after:w-full">
+                        Menyu</li>
+                    <li
+                        class="cursor-pointer relative transition-colors duration-300 ease-in-out hover:text-[#800a7a] after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-[#800a7a] after:transition-all after:duration-300 hover:after:w-full">
+                        Bolalar uchun</li>
+                    <li
+                        class="cursor-pointer relative transition-colors duration-300 ease-in-out hover:text-[#800a7a] after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-0.5 after:bg-[#800a7a] after:transition-all after:duration-300 hover:after:w-full">
+                        Filiallar</li>
                 </ul>
-                <div class="nav_contact">
-                    <div class="nav_phone">
+                <div class="flex gap-4 items-center">
+                    <div
+                        class="flex items-center gap-2 cursor-pointer transition-transform duration-200 p-2 rounded-lg hover:scale-105 hover:bg-white hover:bg-opacity-10">
                         <img src="./imgs/Shape.png" alt="Phone Icon">
-                        <div class="phone_info">
+                        <div class="flex flex-col text-white">
                             <span>(+998 90)</span>
                             <p>612-56-53</p>
                         </div>
                     </div>
-                    <div class="nav_bag">
+                    <div
+                        class="flex items-center gap-2 cursor-pointer transition-transform duration-200 p-2 rounded-lg hover:scale-105 hover:bg-white hover:bg-opacity-10">
                         <img src="./imgs/sumka.svg" alt="Shopping Bag">
-                        <div class="phone_info">
+                        <div class="flex flex-col text-white">
                             <p>Korzina</p>
                             <span>125,400 UZS</span>
                         </div>
@@ -42,25 +50,39 @@
             </div>
         </div>
 
-        <section class="sec_one">
-            <div class="container">
-                <div class="one_content">
-                    <div class="one_text">
-                        <h1>Siz izlagan<br> mazzali<br> ta’mlar</h1>
-                        <p>When an unknown printer took a galley of type scrambled it to make a type specimen </p>
+        <section class="mt-10">
+            <div class="container mx-auto px-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                    <div class="text-one">
+                        <h1 class="w-full max-w-lg font-black text-8xl leading-tight text-[#222124]">Siz izlagan<br>
+                            mazzali<br> ta’mlar</h1>
+                        <p class="mt-3 text-base leading-relaxed text-[#222124] max-w-md">When an unknown printer took
+                            a galley of type scrambled it to make a type specimen </p>
                     </div>
-                    <div class="one_imgs">
-                        <img src="./imgs/Bitmap (1).png" alt="Burger">
+                    <div class="flex justify-end">
+                        <img src="./imgs/Bitmap (1).png" alt="Burger"
+                            class="w-[700px] h-auto transition-transform duration-300 ease-in-out">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sec_two">
-            <div class="container">
-                <div class="two_imgs">
-                    <img src="./imgs/Group 7.png" alt="Burger">
-                    <img src="./imgs/Group 7.png" alt="Burger">
+        <section class="sec_two mt-10">
+            <div class="container mx-auto px-5">
+                <div class="flex gap-5 overflow-x-auto pb-4">
+                    <img src="./imgs/Group 7.png" alt="Burger"
+                        class="w-60 h-auto transition-transform duration-300 ease-in-out rounded-xl shadow-md hover:scale-105 hover:shadow-lg cursor-pointer">
+                    <img src="./imgs/Group 7.png" alt="Burger"
+                        class="w-60 h-auto transition-transform duration-300 ease-in-out rounded-xl shadow-md hover:scale-105 hover:shadow-lg cursor-pointer">
+                    <img src="./imgs/Group 7.png" alt="Burger"
+                        class="w-60 h-auto transition-transform duration-300 ease-in-out rounded-xl shadow-md hover:scale-105 hover:shadow-lg cursor-pointer">
+                    <img src="./imgs/Group 7.png" alt="Burger"
+                        class="w-60 h-auto transition-transform duration-300 ease-in-out rounded-xl shadow-md hover:scale-105 hover:shadow-lg cursor-pointer">
+                    <img src="./imgs/Group 7.png" alt="Burger"
+                        class="w-60 h-auto transition-transform duration-300 ease-in-out rounded-xl shadow-md hover:scale-105 hover:shadow-lg cursor-pointer">
+                    <img src="./imgs/Group 7.png" alt="Burger"
+                        class="w-60 h-auto transition-transform duration-300 ease-in-out rounded-xl shadow-md hover:scale-105 hover:shadow-lg cursor-pointer">
                 </div>
+            </div>
         </section>
 
         <section class="sec_three">
@@ -71,310 +93,221 @@
             </div>
         </section>
 
-        <section class="sec_four">
-            <div class="container">
-                <div class="four_content">
-                    <div class="four_text">
-                        <h2>Mahsulotlar</h2>
-                        <div class="category_tabs">
-                            <div class="tab active">Barchasi</div>
-                            <div class="tab">Pitsa</div>
-                            <div class="tab">Burger</div>
-                            <div class="tab">Kombo</div>
-                            <div class="tab">Salat</div>
-                            <div class="tab">Shirinliklar</div>
-                            <div class="tab">Ichimliklar</div>
-                            <button class="filter_btn">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 4H14M4 8H12M6 12H10" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" />
-                                </svg>
-                                Filtr
-                            </button>
-                        </div>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-5">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-5xl font-black text-[#222124] mb-10 text-center">Mahsulotlar</h2>
+                    <div class="flex items-center gap-5 flex-wrap justify-center">
+                        <div
+                            class="py-3 px-6 rounded-3xl text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 border-2 border-transparent bg-transparent hover:bg-gray-100 hover:-translate-y-0.5">
+                            Barchasi</div>
+                        <div
+                            class="py-3 px-6 rounded-3xl text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 border-2 border-transparent bg-transparent hover:bg-gray-100 hover:-translate-y-0.5 active:bg-yellow-400 active:text-[#222124] active:font-semibold active:shadow-lg">
+                            Pitsa</div>
+                        <div
+                            class="py-3 px-6 rounded-3xl text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 border-2 border-transparent bg-transparent hover:bg-gray-100 hover:-translate-y-0.5">
+                            Burger</div>
+                        <div
+                            class="py-3 px-6 rounded-3xl text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 border-2 border-transparent bg-transparent hover:bg-100 hover:-translate-y-0.5">
+                            Kombo</div>
+                        <div
+                            class="py-3 px-6 rounded-3xl text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 border-2 border-transparent bg-transparent hover:bg-gray-100 hover:-translate-y-0.5">
+                            Salat</div>
+                        <div
+                            class="py-3 px-6 rounded-3xl text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 border-2 border-transparent bg-transparent hover:bg-gray-100 hover:-translate-y-0.5">
+                            Shirinliklar</div>
+                        <div
+                            class="py-3 px-6 rounded-3xl text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 border-2 border-transparent bg-transparent hover:bg-gray-100 hover:-translate-y-0.5">
+                            Ichimliklar</div>
+                        <button
+                            class="flex items-center gap-2 py-3 px-5 rounded-3xl bg-gray-100 border-none text-base font-medium text-[#222124] cursor-pointer transition-all duration-300 ml-2 hover:bg-gray-200 hover:-translate-y-0.5 hover:shadow-md">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 4H14M4 8H12M6 12H10" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" />
+                            </svg>
+                            Filtr
+                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="pizza_menu">
-            <div class="container">
-                <div class="menu_content">
-                    <h2>Pitsa</h2>
-                    <div class="product_grid">
-                        <div class="product_card">
-                            <div class="product_image">
-                                <img src="/imgs/pizz1.jpg.png" alt="Gavaya Pizza">
-                            </div>
-                            <div class="product_info">
-                                <div class="product_header">
-                                    <h3>Gavaya</h3>
-                                    <div class="product_icons">
-
-                                        <span class="icon cheese">🧀</span>
-                                    </div>
-                                </div>
-                                <p class="product_description">Горячая закуска с митболами из говядины, томатами,
-                                    моцареллой и соусом чипотле</p>
-                                <div class="product_footer">
-                                    <span class="price">45,000 UZS</span>
-                                    <button class="add_to_cart">+</button>
-                                </div>
-                            </div>
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-5">
+                <h2 class="text-5xl font-black text-[#222124] mb-12 text-center">Pitsa</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/pizz1.jpg.png" alt="Gavaya Pizza"
+                                class="w-24 h-24 rounded-full object-cover border-2 border-gray-50 transition-transform duration-300 hover:scale-105">
                         </div>
-
-                        <div class="product_card">
-                            <div class="product_image">
-                                <img src="/imgs/pizz1.jpg.png" alt="Mexica Pizza">
-                            </div>
-                            <div class="product_info">
-                                <div class="product_header">
-                                    <h3>Mexica</h3>
-                                    <div class="product_icons">
-
-                                        <span class="icon spicy">🌶️</span>
-                                    </div>
-                                </div>
-                                <p class="product_description">Горячая закуска с митболами из говядины, томатами,
-                                    моцареллой и соусом чипотле</p>
-                                <div class="product_footer">
-                                    <span class="price">53,000 UZS</span>
-                                    <button class="add_to_cart">+</button>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Gavaya</h3>
+                                <div class="flex gap-1">
+                                    <span class="text-base p-1.5 rounded-full bg-yellow-100 shadow-sm">🧀</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="product_card">
-                            <div class="product_image">
-                                <img src="/imgs/pizz1.jpg.png" alt="Hot achchiko Pizza">
-                            </div>
-                            <div class="product_info">
-                                <div class="product_header">
-                                    <h3>Hot achchiko</h3>
-                                    <div class="product_icons">
-                                        <span class="icon fresh">🍃</span>
-                                    </div>
-                                </div>
-                                <p class="product_description">Горячая закуска с митболами из говядины, томатами,
-                                    моцареллой и соусом чипотле</p>
-                                <div class="product_footer">
-                                    <span class="price">64,000 UZS</span>
-                                    <button class="add_to_cart">+</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product_card">
-                            <div class="product_image">
-                                <img src="/imgs/pizz1.jpg.png" alt="Mexica Pizza">
-                            </div>
-                            <div class="product_info">
-                                <div class="product_header">
-                                    <h3>Mexica</h3>
-                                    <div class="product_icons">
-
-                                    </div>
-                                </div>
-                                <p class="product_description">Горячая закуска с митболами из говядины, томатами,
-                                    моцареллой и соусом чипотле</p>
-                                <div class="product_footer">
-                                    <span class="price">45,000 UZS</span>
-                                    <button class="add_to_cart">+</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product_card">
-                            <div class="product_image">
-                                <img src="/imgs/pizz1.jpg.png" alt="Apocalipo Pizza">
-                            </div>
-                            <div class="product_info">
-                                <div class="product_header">
-                                    <h3>Apocalipo</h3>
-                                    <div class="product_icons">
-                                        <span class="icon spicy">🌶️</span>
-                                    </div>
-                                </div>
-                                <p class="product_description">Горячая закуска с митболами из говядины, томатами,
-                                    моцареллой и соусом чипотле</p>
-                                <div class="product_footer">
-                                    <span class="price">64,000 UZS</span>
-                                    <button class="add_to_cart">+</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product_card">
-                            <div class="product_image">
-                                <img src="/imgs/pizz1.jpg.png" alt="Sosiskacho Pizza">
-                            </div>
-                            <div class="product_info">
-                                <div class="product_header">
-                                    <h3>Sosiskacho</h3>
-                                    <div class="product_icons">
-                                        <span class="icon fresh">🍃</span>
-                                    </div>
-                                </div>
-                                <p class="product_description">Горячая закуска с митболами из говядины, томатами,
-                                    моцареллой и соусом чипотле</p>
-                                <div class="product_footer">
-                                    <span class="price">45,000 UZS</span>
-                                    <button class="add_to_cart">+</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="product_card">
-                            <div class="product_image">
-                                <img src="/imgs/pizz1.jpg.png" alt="Mexica Pizza">
-                            </div>
-                            <div class="product_info">
-                                <div class="product_header">
-                                    <h3>Mexica</h3>
-                                    <div class="product_icons">
-
-                                    </div>
-                                </div>
-                                <p class="product_description">Горячая закуска с митболами из говядины, томатами,
-                                    моцареллой и соусом чипотле</p>
-                                <div class="product_footer">
-                                    <span class="price">53,000 UZS</span>
-                                    <button class="add_to_cart">+</button>
-                                </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">45,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="sec_5">
-            <div class="container">
-                <h2 class="menu_title">Burger</h2>
-                <div class="product_grid burger_grid">
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap.png" alt="Cheeseburger">
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/pizz1.jpg.png" alt="Mexica Pizza"
+                                class="w-24 h-24 rounded-full object-cover border-2 border-gray-50 transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Cheeseburger</h3>
-                                <div class="product_icons">
-
-                                    <span class="icon cheese">🧀</span>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Mexica</h3>
+                                <div class="flex gap-1">
+                                    <span class="text-base p-1.5 rounded-full bg-red-100 shadow-sm">🌶️</span>
                                 </div>
                             </div>
-                            <p class="product_description">Горячая закуска с митболами из говядины, томатами, моцареллой
-                                и соусом чипотле</p>
-                            <div class="product_footer">
-                                <span class="price">23,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">53,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap.png" alt="Chili burger">
+
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/pizz1.jpg.png" alt="Hot achchiko Pizza"
+                                class="w-24 h-24 rounded-full object-cover border-2 border-gray-50 transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Chili burger</h3>
-                                <div class="product_icons">
-                                    <span class="icon spicy">🌶️</span>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Hot achchiko</h3>
+                                <div class="flex gap-1">
+                                    <span class="text-base p-1.5 rounded-full bg-green-100 shadow-sm">🍃</span>
                                 </div>
                             </div>
-                            <p class="product_description">Горячая закуска с митболами из говядины, томатами, моцареллой
-                                и соусом чипотле</p>
-                            <div class="product_footer">
-                                <span class="price">23,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">64,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="product_card selected">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap.png" alt="Hamburger">
+
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/pizz1.jpg.png" alt="Mexica Pizza"
+                                class="w-24 h-24 rounded-full object-cover border-2 border-gray-50 transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Hamburger</h3>
-                                <div class="product_icons">
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Mexica</h3>
+                                <div class="flex gap-1">
 
                                 </div>
                             </div>
-                            <p class="product_description">Горячая закуска с митболами из говядины, томатами, моцареллой
-                                и соусом чипотле</p>
-                            <div class="product_footer">
-                                <span class="price">23,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">45,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap.png" alt="Double Burger">
+
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/pizz1.jpg.png" alt="Apocalipo Pizza"
+                                class="w-24 h-24 rounded-full object-cover border-2 border-gray-50 transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Double Burger</h3>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Apocalipo</h3>
+                                <div class="flex gap-1">
+                                    <span class="text-base p-1.5 rounded-full bg-red-100 shadow-sm">🌶️</span>
+                                </div>
                             </div>
-                            <p class="product_description">Горячая закуска с митболами из говядины, томатами, моцареллой
-                                и соусом чипотле</p>
-                            <div class="product_footer">
-                                <span class="price">23,000 UZS</span>
-                                <button class="add_to_cart">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h2 class="menu_title">Kombo</h2>
-                <div class="product_grid kombo_grid">
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap (2).png" alt="Kombo-1">
-                        </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Kombo-1</h3>
-                            </div>
-                            <p class="product_description">Горячая закуска с митболами из говядины, томатами, моцареллой
-                                и соусом чипотле</p>
-                            <div class="product_footer">
-                                <span class="price">25,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">64,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap (2).png" alt="Kombo-2">
+
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/pizz1.jpg.png" alt="Sosiskacho Pizza"
+                                class="w-24 h-24 rounded-full object-cover border-2 border-gray-50 transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Kombo-2</h3>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Sosiskacho</h3>
+                                <div class="flex gap-1">
+                                    <span class="text-base p-1.5 rounded-full bg-green-100 shadow-sm">🍃</span>
+                                </div>
                             </div>
-                            <p class="product_description">Горячая закуска с митболами из говядины, томатами, моцареллой
-                                и соусом чипотле</p>
-                            <div class="product_footer">
-                                <span class="price">23,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">45,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap (2).png" alt="Kombo-3">
+
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/pizz1.jpg.png" alt="Mexica Pizza"
+                                class="w-24 h-24 rounded-full object-cover border-2 border-gray-50 transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Kombo-3</h3>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Mexica</h3>
+                                <div class="flex gap-1">
+
+                                </div>
                             </div>
-                            <p class="product_description">Горячая закуска с митболами из говядины, томатами, моцареллой
-                                и соусом чипотле</p>
-                            <div class="product_footer">
-                                <span class="price">30,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">53,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -382,58 +315,240 @@
             </div>
         </section>
 
-        <section class="menu_section drinks_section">
-            <div class="container">
-                <h2 class="menu_title">Ichimliklar</h2>
-                <div class="product_grid">
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="/imgs/Bitmap (3).png" alt="Sprite 1L">
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-5">
+                <h2 class="text-4xl font-black text-[#222124] mt-36 mb-8">Burger</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap.png" alt="Cheeseburger"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Sprite 1L</h3>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Cheeseburger</h3>
+                                <div class="flex gap-1">
+                                    <span class="text-base p-1.5 rounded-full bg-yellow-100 shadow-sm">🧀</span>
+                                </div>
                             </div>
-                            <p class="product_description">
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">23,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap.png" alt="Chili burger"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Chili burger</h3>
+                                <div class="flex gap-1">
+                                    <span class="text-base p-1.5 rounded-full bg-red-100 shadow-sm">🌶️</span>
+                                </div>
+                            </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">23,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap.png" alt="Hamburger"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Hamburger</h3>
+                                <div class="flex gap-1">
+
+                                </div>
+                            </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">23,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap.png" alt="Double Burger"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Double Burger</h3>
+                            </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">23,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="text-4xl font-black text-[#222124] mt-36 mb-8">Kombo</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap (2).png" alt="Kombo-1"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Kombo-1</h3>
+                            </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">25,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap (2).png" alt="Kombo-2"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Kombo-2</h3>
+                            </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">23,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap (2).png" alt="Kombo-3"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Kombo-3</h3>
+                            </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">Горячая закуска с митболами
+                                из говядины, томатами, моцареллой и соусом чипотле</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">30,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-5">
+                <h2 class="text-4xl font-black text-[#222124] mt-10 mb-8">Ichimliklar</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="/imgs/Bitmap (3).png" alt="Sprite 1L"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Sprite 1L</h3>
+                            </div>
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">
                                 Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле
                             </p>
-                            <div class="product_footer">
-                                <span class="price">6,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">6,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap (3).png" alt="Coca cola 1,5L">
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap (3).png" alt="Coca cola 1,5L"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Coca cola 1,5L</h3>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Coca cola 1,5L</h3>
                             </div>
-                            <p class="product_description">
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">
                                 Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле
                             </p>
-                            <div class="product_footer">
-                                <span class="price">9,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">9,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
-                    <div class="product_card">
-                        <div class="product_image">
-                            <img src="./imgs/Bitmap (3).png" alt="Fanta 1L">
+                    <div
+                        class="flex bg-white rounded-2xl p-5 shadow-lg transition-all duration-300 border border-gray-100 hover:-translate-y-1.5 hover:shadow-xl">
+                        <div class="flex-shrink-0 mr-5">
+                            <img src="./imgs/Bitmap (3).png" alt="Fanta 1L"
+                                class="w-24 h-24 rounded-full object-cover transition-transform duration-300 hover:scale-105">
                         </div>
-                        <div class="product_info">
-                            <div class="product_header">
-                                <h3>Fanta 1L</h3>
+                        <div class="flex-1 flex flex-col justify-between">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-[#222124] m-0">Fanta 1L</h3>
                             </div>
-                            <p class="product_description">
+                            <p class="text-sm leading-relaxed text-gray-600 mb-4 flex-1">
                                 Горячая закуска с митболами из говядины, томатами, моцареллой и соусом чипотле
                             </p>
-                            <div class="product_footer">
-                                <span class="price">6,000 UZS</span>
-                                <button class="add_to_cart">+</button>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold text-[#222124]">6,000 UZS</span>
+                                <button
+                                    class="w-10 h-10 rounded-full bg-yellow-400 border-none text-[#222124] text-xl font-bold cursor-pointer transition-all duration-300 flex items-center justify-center shadow-lg hover:bg-yellow-500 hover:scale-110 hover:shadow-xl">
+                                    +
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -442,62 +557,79 @@
         </section>
 
 
-        <section class="sec_6">
-            <div class="sec6_container">
-                <div class="sec6_text">
-                    <h2>Mobil ilovamiz <br> orqali buyurtma <br> berish yanada osonroq</h2>
-                    <div class="store_buttons">
-                        <a class="google_btn">Google play</a>
-                        <a class="apple_btn">App Store</a>
+        <section class="py-20 bg-gradient-to-br from-[#800a7a] to-[#6a0dad] relative overflow-hidden">
+            <div class="container mx-auto px-5 flex flex-col lg:flex-row items-center justify-between">
+                <div class="text-white text-center lg:text-left mb-10 lg:mb-0">
+                    <h2 class="text-5xl font-black leading-tight mb-8">Mobil ilovamiz <br> orqali buyurtma <br>
+                        berish yanada osonroq</h2>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a
+                            class="inline-flex items-center justify-center px-6 py-3 bg-white text-[#222124] font-semibold rounded-lg shadow-md transition-all duration-300 hover:bg-gray-100 hover:-translate-y-1">
+                            Google Play
+                        </a>
+                        <a
+                            class="inline-flex items-center justify-center px-6 py-3 bg-white text-[#222124] font-semibold rounded-lg shadow-md transition-all duration-300 hover:bg-gray-100 hover:-translate-y-1">
+                            App Store
+                        </a>
                     </div>
                 </div>
                 <div class="sec6_image">
-                    <img src="/imgs/White.png" alt="Telefon ilovasi rasmi">
+                    <img src="/imgs/White.png" alt="Telefon ilovasi rasmi" class="w-full max-w-md lg:max-w-none">
                 </div>
             </div>
         </section>
 
-        <footer class="footer">
-            <div class="footer_container">
-                <div class="footer_col logo">
-                    <img src="/imgs/Group Copy 18.svg" alt="Maxway logo">
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div class="container mx-auto px-5">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-10 border-b border-gray-700 pb-8 mb-8">
+                    <div class="footer_col logo flex justify-center md:justify-start">
+                        <img src="/imgs/Group Copy 18.svg" alt="Maxway logo" class="w-16 h-auto">
+                    </div>
+                    <div class="footer_col text-center md:text-left">
+                        <h4 class="text-lg font-bold text-white mb-4">Asosiy</h4>
+                        <ul>
+                            <li class="mb-2"><a class="hover:text-white transition-colors duration-200">Kompaniya
+                                    haqida</a></li>
+                            <li class="mb-2"><a class="hover:text-white transition-colors duration-200">Filiallar</a>
+                            </li>
+                            <li class="mb-2"><a class="hover:text-white transition-colors duration-200">Bolalar
+                                    uchun</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer_col text-center md:text-left">
+                        <h4 class="text-lg font-bold text-white mb-4">Qo’shimcha</h4>
+                        <ul>
+                            <li class="mb-2"><a class="hover:text-white transition-colors duration-200">Menyu</a></li>
+                            <li class="mb-2"><a class="hover:text-white transition-colors duration-200">Bonusli
+                                    karta</a></li>
+                            <li class="mb-2"><a class="hover:text-white transition-colors duration-200">Bu qanday
+                                    ishlaydi?</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_col text-center md:text-left">
+                        <h4 class="text-lg font-bold text-white mb-4">Biz bilan aloqa</h4>
+                        <p class="mb-2">(+998 71) 200-54-00</p>
+                        <p>100011, Toshkent sh. Shayxontohur tumani,<br> Zarqaynar ko‘chasi, 3B-uy</p>
+                    </div>
                 </div>
-                <div class="footer_col">
-                    <h4>Asosiy</h4>
-                    <ul>
-                        <li><a>Kompaniya haqida</a></li>
-                        <li><a>Filiallar</a></li>
-                        <li><a>Bolalar uchun</a></li>
-                    </ul>
-                </div>
-                <div class="footer_col">
-                    <h4>Qo’shimcha</h4>
-                    <ul>
-                        <li><a>Menyu</a></li>
-                        <li><a>Bonusli karta</a></li>
-                        <li><a>Bu qanday ishlaydi?</a></li>
-                    </ul>
-                </div>
-                <div class="footer_col">
-                    <h4>Biz bilan aloqa</h4>
-                    <p>(+998 71) 200-54-00</p>
-                    <p>100011, Toshkent sh. Shayxontohur tumani,<br> Zarqaynar ko‘chasi, 3B-uy</p>
-                </div>
-            </div>
-            <div class="footer_bottom">
-                <p>© Maxway, 2020</p>
-                <div class="socials">
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-telegram"></i>
-                    <i class="fab fa-tiktok"></i>
+                <div class="flex flex-col sm:flex-row justify-between items-center text-gray-500 text-sm">
+                    <p class="mb-4 sm:mb-0">© Maxway, 2020</p>
+                    <div class="flex gap-4 text-xl">
+                        <a href="#" class="hover:text-white transition-colors duration-200"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-200"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-200"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-200"><i
+                                class="fab fa-telegram"></i></a>
+                        <a href="#" class="hover:text-white transition-colors duration-200"><i
+                                class="fab fa-tiktok"></i></a>
+                    </div>
                 </div>
             </div>
         </footer>
-
-
-
     </header>
 </body>
 
